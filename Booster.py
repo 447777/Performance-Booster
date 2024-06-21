@@ -12,10 +12,10 @@ logging.basicConfig(filename='roblox_booster.log', level=logging.INFO, format='%
 
 def main():
     if not is_admin():
-        logging.error("Please run the script as an administrator.")
+        logging.error("Run it as administrator")
         return
 
-    logging.info("Starting advanced optimizations...")
+    logging.info("Starting optimizations")
     create_restore_point()
     backup_data()
     backup_directories()
@@ -28,7 +28,7 @@ def main():
     registry_tweaks()
     defrag_and_optimize()
     disable_startup_programs()
-    logging.info("Advanced optimizations completed")
+    logging.info("optimizations completed")
 
 if __name__ == "__main__":
     main()
