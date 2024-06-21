@@ -1,15 +1,15 @@
 import os
 
-# Directories to back up
+
 DIRECTORIES_TO_BACKUP = [
     os.path.join(os.getenv("USERPROFILE"), 'Documents'),
     os.path.join(os.getenv("USERPROFILE"), 'Documents', 'Pictures')
 ]
 
-# Backup location
+
 BACKUP_LOCATION = os.path.join(os.getenv("USERPROFILE"), 'Documents', 'Backup')
 
-# List of unnecessary services to disable
+
 UNNECESSARY_SERVICES = [
     "DiagTrack",
     "WMPNetworkSvc",
@@ -18,14 +18,14 @@ UNNECESSARY_SERVICES = [
     "PrintNotify",
 ]
 
-# Advanced service optimizations
+
 SERVICES_TO_OPTIMIZE = {
-    "SysMain": "manual",  # Superfetch
-    "Spooler": "manual",  # Print Spooler
-    "WSearch": "manual",  # Windows Search
+    "SysMain": "manual",  
+    "Spooler": "manual",  
+    "WSearch": "manual",  
 }
 
-# Registry tweaks
+
 REGISTRY_TWEAKS = {
     "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\Session Manager\\Memory Management": {
         "LargeSystemCache": 1,
